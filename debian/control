@@ -1,0 +1,78 @@
+Source: haskell-ed25519
+Maintainer: Debian Haskell Group <pkg-haskell-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Clint Adams <clint@debian.org>,
+Priority: optional
+Section: haskell
+Rules-Requires-Root: no
+Build-Depends:
+ cdbs,
+ debhelper (>= 10),
+ ghc (>= 8),
+ ghc-prof,
+ haskell-devscripts (>= 0.13),
+ libghc-doctest-dev (>= 0.10),
+ libghc-doctest-dev (<< 0.17),
+ libghc-quickcheck2-dev (>= 2.4),
+ libghc-quickcheck2-dev (<< 2.14),
+Build-Depends-Indep:
+ ghc-doc,
+Standards-Version: 4.5.0
+Homepage: https://thoughtpolice.github.com/hs-ed25519
+Vcs-Browser: https://salsa.debian.org/haskell-team/DHG_packages/tree/master/p/haskell-ed25519
+Vcs-Git: https://salsa.debian.org/haskell-team/DHG_packages.git [p/haskell-ed25519]
+X-Description: Ed25519 cryptographic signatures
+ This package provides a simple, portable implementation of the
+ ed25519 public-key signature system. It also includes support for
+ detached signatures.
+ .
+ The underlying implementation uses the ref10 implementation of
+ ed25519 from SUPERCOP, and should be relatively fast.
+
+Package: libghc-ed25519-dev
+Architecture: any
+Depends:
+ ${haskell:Depends},
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends:
+ ${haskell:Recommends},
+Suggests:
+ ${haskell:Suggests},
+Provides:
+ ${haskell:Provides},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
+
+Package: libghc-ed25519-prof
+Architecture: any
+Depends:
+ ${haskell:Depends},
+ ${misc:Depends},
+Recommends:
+ ${haskell:Recommends},
+Suggests:
+ ${haskell:Suggests},
+Provides:
+ ${haskell:Provides},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
+
+Package: libghc-ed25519-doc
+Architecture: all
+Section: doc
+Depends:
+ ${haskell:Depends},
+ ${misc:Depends},
+Recommends:
+ ${haskell:Recommends},
+Suggests:
+ ${haskell:Suggests},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}

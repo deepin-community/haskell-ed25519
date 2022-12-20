@@ -1,0 +1,146 @@
+haskell-ed25519 (0.0.5.0-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:37:56 +0800
+
+haskell-ed25519 (0.0.5.0-14) unstable; urgency=medium
+
+  * Patch for newer QuickCheck.
+
+ -- Clint Adams <clint@debian.org>  Sat, 06 Jun 2020 18:02:12 -0400
+
+haskell-ed25519 (0.0.5.0-13) unstable; urgency=medium
+
+  [ Clint Adams ]
+  * Fix build with newer quickcheck
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Sun, 25 Aug 2019 19:33:26 +0200
+
+haskell-ed25519 (0.0.5.0-12) unstable; urgency=medium
+
+  * Update patches for newer doctest/quickcheck2
+
+ -- Ilias Tsitsimpis <iliastsi@debian.org>  Thu, 04 Oct 2018 16:29:17 +0300
+
+haskell-ed25519 (0.0.5.0-11) unstable; urgency=medium
+
+  [ Clint Adams ]
+  * Set Rules-Requires-Root to no.
+
+  [ Ilias Tsitsimpis ]
+  * Bump debhelper compat level to 10
+
+ -- Ilias Tsitsimpis <iliastsi@debian.org>  Sun, 30 Sep 2018 21:07:25 +0300
+
+haskell-ed25519 (0.0.5.0-10) unstable; urgency=medium
+
+  * Better patch for newer QuickCheck.
+
+ -- Clint Adams <clint@debian.org>  Sat, 14 Apr 2018 12:10:38 -0400
+
+haskell-ed25519 (0.0.5.0-9) unstable; urgency=medium
+
+  * Patch for newer QuickCheck.
+
+ -- Clint Adams <clint@debian.org>  Sat, 14 Apr 2018 00:17:50 -0400
+
+haskell-ed25519 (0.0.5.0-8) unstable; urgency=medium
+
+  * Patch for newer doctest.
+
+ -- Clint Adams <clint@debian.org>  Fri, 13 Apr 2018 23:50:13 -0400
+
+haskell-ed25519 (0.0.5.0-7) unstable; urgency=medium
+
+  [ Ilias Tsitsimpis ]
+  * Change Priority to optional. Since Debian Policy version 4.0.1,
+    priority extra has been deprecated.
+  * Use the HTTPS form of the copyright-format URL
+  * Modify d/watch and Source field in d/copyright to use HTTPS
+  * Declare compliance with Debian policy 4.1.1
+  * Use salsa.debian.org URLs in Vcs-{Browser,Git} fields
+
+  [ Clint Adams ]
+  * Bump to Standards-Version 4.1.4.
+
+ -- Clint Adams <clint@debian.org>  Mon, 09 Apr 2018 20:04:48 -0400
+
+haskell-ed25519 (0.0.5.0-6) unstable; urgency=medium
+
+  * Patch for newer QuickCheck.  closes: #867831.
+
+ -- Clint Adams <clint@debian.org>  Sun, 09 Jul 2017 15:55:11 -0400
+
+haskell-ed25519 (0.0.5.0-5) unstable; urgency=medium
+
+  * Patch for newer directory.
+
+ -- Clint Adams <clint@debian.org>  Tue, 20 Jun 2017 23:13:45 -0400
+
+haskell-ed25519 (0.0.5.0-4) unstable; urgency=medium
+
+  * Upload to unstable as part of GHC 8 transition.
+
+ -- Clint Adams <clint@debian.org>  Thu, 27 Oct 2016 18:33:30 -0400
+
+haskell-ed25519 (0.0.5.0-3) experimental; urgency=medium
+
+  * Temporarily build-depend on ghc 8.
+
+ -- Clint Adams <clint@debian.org>  Mon, 17 Oct 2016 12:16:59 -0400
+
+haskell-ed25519 (0.0.5.0-2) unstable; urgency=medium
+
+  [ Dmitry Bogatov ]
+  * Bump standards version to 3.9.8 (no changes needed)
+
+  [ Joachim Breitner ]
+  * Bump dependency on doctest
+
+ -- Joachim Breitner <nomeata@debian.org>  Wed, 01 Jun 2016 10:05:45 +0200
+
+haskell-ed25519 (0.0.5.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Joachim Breitner <nomeata@debian.org>  Sun, 20 Dec 2015 23:44:37 +0100
+
+haskell-ed25519 (0.0.2.0-6) experimental; urgency=medium
+
+  * Depend on haskell-devscripts >= 0.10 to ensure that this package
+    builds against GHC in experimental
+
+ -- Joachim Breitner <nomeata@debian.org>  Thu, 20 Aug 2015 10:27:32 +0200
+
+haskell-ed25519 (0.0.2.0-5) unstable; urgency=medium
+
+  * Do not build hlint tests, simplifies dependencies
+
+ -- Joachim Breitner <nomeata@debian.org>  Mon, 11 May 2015 14:44:53 +0200
+
+haskell-ed25519 (0.0.2.0-4) experimental; urgency=medium
+
+  * Depend on haskell-devscripts 0.9, found in experimental
+
+ -- Joachim Breitner <nomeata@debian.org>  Sat, 20 Dec 2014 17:10:22 +0100
+
+haskell-ed25519 (0.0.2.0-3) unstable; urgency=medium
+
+  * Patch for QuickCheck 2.7.
+
+ -- Clint Adams <clint@debian.org>  Tue, 25 Nov 2014 11:16:26 -0500
+
+haskell-ed25519 (0.0.2.0-2) unstable; urgency=high
+
+  * Disable hlint testing of benchmarks (which we don't run)
+    and fudge hlint test of properties, since an apparent
+    change in hlint leads to failures.  closes: #752940.
+
+ -- Clint Adams <clint@debian.org>  Sat, 28 Jun 2014 20:50:03 -0400
+
+haskell-ed25519 (0.0.2.0-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Clint Adams <clint@debian.org>  Sat, 01 Feb 2014 01:35:34 -0500
